@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name><![CDATA[furikake]]></name>
+    <description><![CDATA[Gentoo overlay for obscure packages]]></description>
+    <homepage>https://github.com/antoligy/furikake</homepage>
+    <owner type="person">
+      <email>antoligy+furikake@antoligy.com</email>
+      <name><![CDATA[Alex 'Antoligy' Wilson]]></name>
+    </owner>
+    <source type="git">git://github.com/antoligy/furikake.git</source>
+    <source type="git">https://github.com/antoligy/furikake.git</source>
+    <feed>https://github.com/antoligy/furikake/commits/master.atom</feed>
+  </repo> 
+</repositories>
