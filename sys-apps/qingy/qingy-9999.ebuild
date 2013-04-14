@@ -1,7 +1,7 @@
 # Copyright 1999-2012 Gentoo Foundation 
 # Distributed under the terms of the GNU General Public License v2 
 
-EAPI=5 
+EAPI=5
 
 inherit autotools elisp-common eutils pam subversion 
 
@@ -56,21 +56,20 @@ src_configure()
                 echo 
         fi 
 
-        use emacs                && emacs_support="--enable-emacs --with-lispdir=${SITELISP}/${PN}" 
+        use emacs && emacs_support="--enable-emacs --with-lispdir=${SITELISP}/${PN}" 
         use opensslcrypt && crypto_support="--enable-crypto=openssl" 
-        use crypt        && crypto_support="--enable-crypto=libgcrypt" 
+        use crypt && crypto_support="--enable-crypto=libgcrypt" 
         econf                                      \
-                --sbindir=/sbin                        \
-                --disable-optimizations                \
-                `use_enable pam`                       \
-                `use_enable consolekit`                \
-                `use_enable static static-build`       \
-                `use_enable gpm gpm-lock`              \ 
-                `use_enable X x-support`               \
-                `use_enable directfb DirectFB-support` \
-                ${crypto_support}                      \
-                ${emacs_support}                       \
-                || die "Configuration failed"
+                --sbindir=/sbin \
+                --disable-optimizations \
+                $(use_enable pam) \
+                $(use_enable consolekit) \
+                $(use_enable static static-build) \
+                $(use_enable gpm gpm-lock) \
+                $(use_enable X x-support) \
+                $(use_enable directfb DirectFB-support ) \
+                ${crypto_support} \
+                ${emacs_support}
 }
 
 src_install() 
@@ -95,12 +94,12 @@ src_install()
         sed -i 's/theme = "default"/theme = "gentoo"/' "${D}/etc/${PN}/settings" 
 
         # Install log rotation policy 
-        insinto /etc/logrotate.d 
+        insinto /etc/logrotate.d
         newins "${FILESDIR}/${PN}-logrotate" ${PN} || die "Log rotation policy installation failed"
 
-        use emacs && elisp-site-file-install "${FILESDIR}/${SITEFILE}" 
+        use emacs && elisp-site-file-install "${FILESDIR}/${SITEFILE}"
 
-        rm "${D}/etc/pam.d/qingy" 
+        rm "${D}/etc/pam.d/qingy"
         pamd_mimic system-local-login qingy auth account password session 
 } 
 
