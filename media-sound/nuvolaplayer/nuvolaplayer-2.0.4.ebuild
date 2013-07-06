@@ -21,8 +21,8 @@ RDEPEND="
 	net-libs/webkit-gtk:3[gstreamer]
 	media-libs/gstreamer:1.0
 	media-plugins/gst-plugins-mad:1.0
-	media-plugins/gst-plugins-good:1.0
-	media-plugins/gst-plugins-bad:1.0
+	media-libs/gst-plugins-good:1.0
+	media-libs/gst-plugins-bad:1.0
 	dev-libs/libunique:3
 	>=net-libs/libsoup-2.34
 	x11-libs/gdk-pixbuf[jpeg]
