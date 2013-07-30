@@ -9,5 +9,7 @@
 |-- media-sound
 |   `-- nuvolaplayer
 |-- profiles
-`-- sys-apps
-    `-- qingy</pre>
+|-- sys-apps
+|   `-- qingy
+`-- sys-kernel
+    `- liquorix-sources</pre>
