@@ -8,10 +8,10 @@ inherit gnome2-utils vala waf-utils
 
 DESCRIPTION="Cloud music integration for your Linux desktop"
 HOMEPAGE="https://launchpad.net/nuvola-player"
-SRC_URI="https://launchpad.net/nuvola-player/2.0.x/${PV}/+download/${P}.tar.gz"
+SRC_URI="https://launchpad.net/nuvola-player/2.1.x/2.1-beta1/+download/nuvolaplayer-2.1~r736.beta1.tar.gz"
 LICENSE="BSD-2"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="~amd64 ~x86"
 IUSE="debug"
 
 RDEPEND="
@@ -21,8 +21,8 @@ RDEPEND="
 	net-libs/webkit-gtk:3[gstreamer]
 	media-libs/gstreamer:1.0
 	media-plugins/gst-plugins-mad:1.0
-	media-plugins/gst-plugins-good:1.0
-	media-plugins/gst-plugins-bad:1.0
+	media-libs/gst-plugins-good:1.0
+	media-libs/gst-plugins-bad:1.0
 	dev-libs/libunique:3
 	>=net-libs/libsoup-2.34
 	x11-libs/gdk-pixbuf[jpeg]
