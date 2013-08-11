@@ -32,6 +32,13 @@ DEPEND="${RDEPEND}
 	dev-util/intltool
 "
 
+src_unpack() {
+	if [ "${A}" != "" ]; then
+		unpack ${A}
+		mv nuvolaplayer-2.1~r736.beta1 ${P}
+	fi
+}
+
 src_prepare() {
 	vala_src_prepare --ignore-use
 }
@@ -39,7 +46,9 @@ src_prepare() {
 src_configure() {
 	waf-utils_src_configure \
 		--no-svg-optimization \
-		--no-unity-quick-list
+		--no-unity-quick-list \
+		--no-debug-symbols \
+		--skip-tests
 }
 
 pkg_postinst() {
