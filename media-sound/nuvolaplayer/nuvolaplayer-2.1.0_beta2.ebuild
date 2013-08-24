@@ -8,7 +8,7 @@ inherit gnome2-utils vala waf-utils
 
 DESCRIPTION="Cloud music integration for your Linux desktop"
 HOMEPAGE="https://launchpad.net/nuvola-player"
-SRC_URI="https://launchpad.net/nuvola-player/2.1.x/2.1-beta1/+download/nuvolaplayer-2.1~r736.beta1.tar.gz"
+SRC_URI="https://launchpad.net/nuvola-player/2.1.x/2.1-beta2/+download/nuvolaplayer-2.1%7Er748.beta2.tar.gz"
 LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
@@ -35,7 +35,7 @@ DEPEND="${RDEPEND}
 src_unpack() {
 	if [ "${A}" != "" ]; then
 		unpack ${A}
-		mv nuvolaplayer-2.1~r736.beta1 ${P}
+		mv nuvolaplayer-2.1~r748.beta2 ${P}
 	fi
 }
 

@@ -11,5 +11,7 @@
 |-- profiles
 |-- sys-apps
 |   `-- qingy
-`-- sys-kernel
-    `- liquorix-sources</pre>
+|-- sys-kernel
+|   `-- liquorix-sources
+`-- www-plugins
+    `-- pipelight</pre>
