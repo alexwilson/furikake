@@ -14,7 +14,7 @@ HOMEPAGE="http://liquorix.net"
 RESTRICT="mirror"
 IUSE="deblob"
 
-LIQUORIX_PATCH="${PV}-2.patch.gz"
+LIQUORIX_PATCH="${PV}-1.patch.gz"
 LIQUORIX_URI="http://liquorix.net/sources/${LIQUORIX_PATCH}"
 
 DESCRIPTION="Liquorix kernel sources"
