@@ -6,8 +6,8 @@
     <description><![CDATA[Gentoo overlay for obscure packages]]></description>
     <homepage>https://github.com/antoligy/furikake</homepage>
     <owner type="person">
-      <email>antoligy+furikake@antoligy.com</email>
-      <name><![CDATA[Alex 'Antoligy' Wilson]]></name>
+      <email>a@ax.gy</email>
+      <name><![CDATA[Alex  Wilson]]></name>
     </owner>
     <source type="git">git://github.com/antoligy/furikake.git</source>
     <source type="git">https://github.com/antoligy/furikake.git</source>
